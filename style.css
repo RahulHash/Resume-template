@@ -1,0 +1,192 @@
+@import "https://unpkg.com/open-props";
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* width: 100%;
+  height: 100%; */
+  margin: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(34,164,164,0.8214636196275386) 37%, rgba(68,217,247,1) 100%);
+  margin-top: 10%;
+  padding: 0 15%;
+  /* margin-left: 20%;
+  margin-right: 20%; */
+  font-family: "Roboto", sans-serif;
+  /* text-align: justify; */
+}
+
+.container{
+  border-radius:50px 50px 0 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  background:#fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.info-des {
+  display: flex;
+  gap: 0.5em;
+}
+
+/* main-body */
+
+.main-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+
+.right-section{
+    padding-left:100px;
+}
+
+/* progess-bar */
+
+.prog-bar{
+  display:grid;
+
+}
+.prog-elem {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items:center;
+}
+
+.progress-bar {
+  height: 0.1em;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* width: 50%; */
+  /* margin-bottom: .5em; */
+}
+/* progress */
+.progress-bar::before {
+  content: " ";
+  width: var(--progress-value);
+  height: 0.2em;
+  background-color: gray;
+}
+/* progress indicator(circle) */
+.progress-bar::after {
+  content: " ";
+  border-radius: 50%;
+  width: 0.5em;
+  height: 0.5em;
+  background: rgb(248, 112, 135);
+  position: absolute;
+  left: calc(var(--progress-value) - 0.5em);
+}
+
+/* header */
+
+.header {
+  padding: 40px;
+}
+
+.info-des {
+  color: var(--gray-6);
+}
+
+.picture {
+  width: 110px;
+  border-radius: 50%;
+}
+
+/* main-body */
+
+hr{
+    height:.25em;
+    background: var(--pink-5);
+    margin: 0;
+    border:none;
+}
+
+.icons-dates-locs {
+  display: flex;
+  gap: 0.5em;
+  color: white;
+}
+
+h2{
+    color:white;
+}
+
+h3{
+    color:var(--pink-5);
+    margin-bottom: 20px;
+}
+
+.left-section,.right-section{
+    background: #1A1A1A;
+    color: var(--gray-5);
+    padding: 40px;
+}
+
+
+.left-section>h3{
+    margin-bottom: 20px;
+}
+
+.left-section>p{
+    margin-bottom: 30px;
+}
+
+.xp-des>p{
+    margin-bottom: 20px;
+}
+
+.skill-list{
+    margin: 0;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.work-xp,.languages,.education,.achivements,.hobbies{
+    margin-bottom: 40px;
+}
+
+.achivements>ul{
+    margin-left: 20px;
+    padding: 0;
+}
+
+.hobbies-icon{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    gap: 1.5em;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fff;
+}
